@@ -1,14 +1,16 @@
-apply plugin: "idea"
-apply plugin: "java"
-apply plugin: "maven"
-
-task wrapper(type: Wrapper) {
-	gradleVersion = '2.0'
-	distributionUrl = "https://services.gradle.org/distributions/gradle-${gradleVersion}-all.zip"
-}
 plugins {
   id "org.sonarqube" version "3.3"
 }
+
+apply plugin: "idea"
+apply plugin: "java"
+apply plugin: "maven-publish"
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '7.4.2'
+	distributionUrl = "https://services.gradle.org/distributions/gradle-${gradleVersion}-all.zip"
+}
+
 
 sonarqube {
   properties {
