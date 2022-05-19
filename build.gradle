@@ -4,7 +4,7 @@ apply plugin: "maven"
 
 task wrapper(type: Wrapper) {
 	gradleVersion = '2.0'
-	distributionUrl = "http://services.gradle.org/distributions/gradle-${gradleVersion}-all.zip"
+	distributionUrl = "https://services.gradle.org/distributions/gradle-${gradleVersion}-all.zip"
 }
 plugins {
   id "org.sonarqube" version "3.3"
@@ -50,7 +50,7 @@ targetCompatibility = '1.8'
 repositories {
 	mavenCentral()
 	maven {
-		url "http://maven.stardog.com"
+		url "https://maven.stardog.com"
 	}
 }
 
